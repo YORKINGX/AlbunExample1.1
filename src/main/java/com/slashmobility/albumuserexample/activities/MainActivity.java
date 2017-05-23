@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(ArrayList<AlbumsUserModel> arrayAlbums) {
                // Toast.makeText(MainActivity.this,"Esto trajo "+ String.valueOf(albumsModel.size()),Toast.LENGTH_LONG).show();
-                AlbumsAdapter mAdapter = new AlbumsAdapter(getApplicationContext(),albumsModel);
+                AlbumsAdapter mAdapter = new AlbumsAdapter(getApplicationContext(),arrayAlbums);
                 mrv_lista.setAdapter(mAdapter);
             }
 
