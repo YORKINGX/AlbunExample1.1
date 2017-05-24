@@ -47,7 +47,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumsAvil
         holder.midAlbums.setText(String.valueOf(arrayAlbums.get(position).getId()));
         holder.midUser.setText(String.valueOf(arrayAlbums.get(position).getUserId()));
         holder.midTitle.setText(arrayAlbums.get(position).getTitle());
-        Picasso.with(mContext).load("https://goo.gl/LwAau1").into(holder.midImage);
+        Picasso.with(mContext).load("http://imagenpng.com/wp-content/uploads/2015/08/small-mariopng.png").into(holder.midImage);
     }
 
     @Override
