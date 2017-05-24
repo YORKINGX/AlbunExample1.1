@@ -5,10 +5,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.slashmobility.albumuserexample.R;
 import com.slashmobility.albumuserexample.model.AlbumsUserModel;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -45,7 +47,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumsAvil
         holder.midAlbums.setText(String.valueOf(arrayAlbums.get(position).getId()));
         holder.midUser.setText(String.valueOf(arrayAlbums.get(position).getUserId()));
         holder.midTitle.setText(arrayAlbums.get(position).getTitle());
-
+        Picasso.with(mContext).load("https://goo.gl/LwAau1").into(holder.midImage);
     }
 
     @Override
@@ -58,6 +60,8 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumsAvil
         @BindView(R.id.idUser) TextView midUser;
         @BindView(R.id.idAlbums) TextView midAlbums;
         @BindView(R.id.idTitle) TextView midTitle;
+        @BindView(R.id.idimage) ImageView midImage;
+
         View itemView;
         public AlbumsAvilableViewHolder(View itemView) {
 

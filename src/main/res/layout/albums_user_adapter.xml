@@ -16,8 +16,16 @@
                android:layout_width="wrap_content"
                android:layout_height="wrap_content">
 
+               <ImageView
+                   android:id="@+id/idimage"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@android:drawable/ic_search_category_default"/>
                <TextView
                    android:id="@+id/idUser"
+                   android:textColor="@color/colorfont"
+                   android:layout_toRightOf="@+id/idimage"
+                   android:paddingLeft="5dp"
                    android:text="Tesss"
                    android:textStyle="bold"
                    android:textSize="16sp"
@@ -26,11 +34,13 @@
 
                <TextView
                    android:id="@+id/idAlbums"
+                   android:textColor="@color/colorfont"
                    android:text="7 pts."
                    android:textStyle="bold"
                    android:textSize="16sp"
-                   android:layout_toRightOf="@+id/idUser"
-                   android:paddingLeft="10dp"
+                   android:paddingLeft="5dp"
+                   android:layout_below="@+id/idUser"
+                   android:layout_toRightOf="@+id/idimage"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"/>
 
@@ -38,9 +48,12 @@
 
            <TextView
                android:id="@+id/idTitle"
+               android:textColor="@color/colorfont"
+                android:text="asdadsadasdasdasdasdasdasdasdasdasdasd"
                android:textSize="16sp"
-               android:layout_marginTop="10dp"
-               android:layout_width="match_parent"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp"
+               android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
        </LinearLayout>
 </LinearLayout>
