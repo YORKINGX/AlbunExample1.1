@@ -31,7 +31,6 @@ public class ServiceHelper {
     }
 
 
-
     public static ServiceInterface getInstance(){
         if(mInstance == null)
             mInstance = new ServiceHelper();

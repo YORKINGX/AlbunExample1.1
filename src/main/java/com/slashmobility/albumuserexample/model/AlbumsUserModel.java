@@ -19,7 +19,7 @@ public class AlbumsUserModel {
     public AlbumsUserModel() {
     }
 
-    public int getUserId() {
+        public int getUserId() {
             return this.userId;
         }
         public void setUserId(int userId) {
