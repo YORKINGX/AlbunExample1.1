@@ -23,7 +23,7 @@ public class Segundo_Activity extends AppCompatActivity {
         if(intent.hasExtra("parametro")){
 
             String message = intent.getStringExtra("parametro");
-            Toast.makeText(this, "Diste Clieck en la posicion:" + message, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Diste Click en la posiciòn:" + message, Toast.LENGTH_SHORT).show();
 
         }
 

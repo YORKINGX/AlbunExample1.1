@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/item_config"
+        android:title="Configuraciòn"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction = "never"/>
+
+    <item android:id="@+id/item_inf"
+        android:title="Informaciòn"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:orderInCategory="10"
+        app:showAsAction = "never"
+        />
+
+    <item android:id="@+id/item_search"
+        android:title="Buscar"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:orderInCategory="5"
+        app:showAsAction = "always"/>
+
+
+</menu>
